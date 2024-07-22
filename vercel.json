@@ -5,6 +5,10 @@
     ],
     "routes": [
       { "src": "/.*", "dest": "/public/index.php" }
-    ]
+    ],
+    "env": {
+      "VERCEL_BUILD_ENV": "production"
+    },
+    "buildCommand": "apt-get update && apt-get install -y libssl-dev && npm install && npm run build"
   }
   
