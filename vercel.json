@@ -7,8 +7,8 @@
       { "src": "/.*", "dest": "/public/index.php" }
     ],
     "env": {
-      "VERCEL_BUILD_ENV": "production"
-    },
-    "buildCommand": "apt-get update && apt-get install -y libssl-dev && npm install && npm run build"
+      "APP_ENV": "production",
+      "APP_KEY": "base64:6YRQby3bqoMnLSdpLDWvWyb7I6tef4B6YOVB3lDdIXY="
+    }
   }
   
